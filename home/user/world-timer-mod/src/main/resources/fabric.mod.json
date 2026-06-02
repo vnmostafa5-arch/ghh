@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "worldtimer",
+  "version": "${version}",
+  "name": "World Timer",
+  "description": "Tracks and displays the total time spent in a Minecraft world. Time is saved persistently and accumulates across sessions.",
+  "authors": ["vnmostafa5"],
+  "contact": {
+    "homepage": "https://github.com/vnmostafa5-arch/world-timer-mod",
+    "sources": "https://github.com/vnmostafa5-arch/world-timer-mod"
+  },
+  "license": "MIT",
+  "icon": "assets/worldtimer/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.vnmostafa5.worldtimer.WorldTimerMod"
+    ],
+    "client": [
+      "com.vnmostafa5.worldtimer.client.WorldTimerClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.2",
+    "minecraft": "~26.1.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
